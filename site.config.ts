@@ -9,7 +9,7 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Lucy's Journey',
+  name: 'Lucy\'s Journey',
   domain: 'lucy-pham.vercel.app',
   author: 'Lucy Pham',
 
