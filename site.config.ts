@@ -14,7 +14,7 @@ export default siteConfig({
   author: 'Lucy Pham',
 
   // open graph metadata (optional)
-  description: 'Example Next.js Notion Starter Kit Site',
+  description: 'On my way to become a good person.',
 
   // social usernames (optional)
   linkedin: 'phamkhanhle',
