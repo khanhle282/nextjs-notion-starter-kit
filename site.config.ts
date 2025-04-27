@@ -9,9 +9,9 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: "Lucy's Journey",
-  domain: 'lucy-pham.vercel.app',
-  author: 'Lucy Pham',
+  name: "Le's Journey",
+  domain: 'phamkhanhle.vercel.app',
+  author: 'Pham Khanh Le',
 
   // open graph metadata (optional)
   description: 'On my way to become a good person.',
