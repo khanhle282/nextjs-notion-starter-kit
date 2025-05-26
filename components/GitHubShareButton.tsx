@@ -44,3 +44,4 @@ export function GitHubShareButton() {
     </a>
   )
 }
+// This component renders a GitHub corner button that links to the user's GitHub profile.
