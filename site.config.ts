@@ -14,11 +14,10 @@ export default siteConfig({
   author: 'Pham Khanh Le',
 
   // open graph metadata (optional)
-  description: 'On my way to become a good person.',
+  description: 'On my journey to becoming a good person.',
 
   // social usernames (optional)
   linkedin: 'phamkhanhle',
-  facebook: 'khunglongmuahe',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
