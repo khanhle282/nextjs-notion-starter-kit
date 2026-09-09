@@ -1,3 +1,4 @@
+import type { ExtendedRecordMap } from 'notion-types'
 import { getAllPagesInSpace, getPageProperty, uuidToId } from 'notion-utils'
 import pMemoize from 'p-memoize'
 
@@ -27,7 +28,10 @@ const getAllPages = pMemoize(getAllPagesImpl, {
 
 const getPage = async (pageId: string, ...args) => {
   console.log('\nnotion getPage', uuidToId(pageId))
-  return notion.getPage(pageId, ...args)
+  return (await notion.getPage(
+    pageId,
+    ...args
+  )) as unknown as ExtendedRecordMap
 }
 
 async function getAllPagesImpl(
