@@ -1,7 +1,7 @@
 import ky from 'ky'
 import { type NextApiRequest, type NextApiResponse } from 'next'
 import { ImageResponse } from 'next/og'
-import { type PageBlock } from 'notion-types'
+import { type ExtendedRecordMap, type PageBlock } from 'notion-types'
 import {
   getBlockIcon,
   getBlockTitle,
@@ -175,7 +175,9 @@ export async function getNotionPageInfo({
   | { type: 'success'; data: NotionPageInfo }
   | { type: 'error'; error: PageError }
 > {
-  const recordMap = await notion.getPage(pageId)
+  const recordMap = (await notion.getPage(
+    pageId
+  )) as unknown as ExtendedRecordMap
 
   const keys = Object.keys(recordMap?.block || {})
   const block = recordMap?.block?.[keys[0]]?.value
